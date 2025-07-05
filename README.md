@@ -1,10 +1,10 @@
 ##  Nome das pastas
 
-### As pastas com os nomes 'ws01', 'ws02' etc foram seguidos de acordo com os nomes dos sites presentes em nossa documentação do overleaf. 
+### As pastas com os nomes `ws01`, `ws02` etc foram seguidos de acordo com os nomes dos sites presentes em nossa documentação do overleaf. 
 ---
 ## 🤖 Como os testes foram gerados
 
-### Os casos de teste presentes nas pastas `ws01`, `ws02` e `ws03` foram gerados automaticamente com a IA **Suna**, uma plataforma que orquestra múltiplos agentes de IA para automação de tarefas complexas.
+### Os casos de teste presentes nas pastas foram gerados automaticamente com a IA **Suna**, uma plataforma que orquestra múltiplos agentes de IA para automação de tarefas complexas.
 ---
 
 A geração foi realizada com a seguinte infraestrutura:
