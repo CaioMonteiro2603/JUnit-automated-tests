@@ -1,4 +1,4 @@
-package selenium.ws01;
+package deepseek.ws01.seq01;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
@@ -34,7 +34,7 @@ public class WebsiteTest {
         driver.get(BASE_URL);
 
         // Verify page title
-        Assertions.assertEquals("Test Healing", driver.getTitle());
+        Assertions.assertEquals("Login Healing", driver.getTitle());
 
         // Verify main heading
         WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(

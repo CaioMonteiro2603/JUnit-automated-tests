@@ -1,4 +1,4 @@
-package selenium.ws02;
+package deepseek.ws02.seq01;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
@@ -99,7 +99,7 @@ public class SauceDemoTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bm-menu-wrap")));
         
         // Verify menu items
-        List&lt;WebElement&gt; menuItems = driver.findElements(By.cssSelector(".bm-item.menu-item"));
+        List<WebElement> menuItems = driver.findElements(By.cssSelector(".bm-item.menu-item"));
         Assertions.assertEquals(4, menuItems.size());
         
         // Test About link
@@ -130,11 +130,11 @@ public class SauceDemoTest {
         wait.until(ExpectedConditions.urlContains("inventory.html"));
         
         // Get all product items
-        List&lt;WebElement&gt; products = driver.findElements(By.className("inventory_item"));
+        List<WebElement> products = driver.findElements(By.className("inventory_item"));
         Assertions.assertTrue(products.size() > 0);
         
         // Test each product link
-        for (int i = 0; i &lt; products.size(); i++) {
+        for (int i = 0; i < products.size(); i++) {
             // Get product name and price
             String productName = products.get(i).findElement(By.className("inventory_item_name")).getText();
             String productPrice = products.get(i).findElement(By.className("inventory_item_price")).getText();
@@ -174,7 +174,7 @@ public class SauceDemoTest {
     
     private void testShoppingCart() {
         // Add first product to cart
-        List&lt;WebElement&gt; products = driver.findElements(By.className("inventory_item"));
+        List<WebElement> products = driver.findElements(By.className("inventory_item"));
         products.get(0).findElement(By.className("btn_primary")).click();
         
         // Verify cart badge updated

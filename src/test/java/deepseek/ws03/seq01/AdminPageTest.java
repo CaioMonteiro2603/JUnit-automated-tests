@@ -1,4 +1,4 @@
-package selenium.ws01;
+package deepseek.ws03.seq01;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
