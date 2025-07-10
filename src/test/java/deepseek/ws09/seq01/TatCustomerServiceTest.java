@@ -91,7 +91,7 @@ public class TatCustomerServiceTest {
         Select productDropdown = new Select(driver.findElement(By.id("product")));
         
         // Verify options
-        List&lt;WebElement&gt; options = productDropdown.getOptions();
+        List<WebElement> options = productDropdown.getOptions();
         Assertions.assertEquals(5, options.size());
         Assertions.assertEquals("Selecione", options.get(0).getText());
         Assertions.assertEquals("Blog", options.get(1).getText());

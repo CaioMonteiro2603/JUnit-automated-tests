@@ -82,12 +82,12 @@ public class Select2Test {
         multiSelect.click();
         
         // Select multiple options
-        List&lt;WebElement&gt; options = driver.findElements(By.cssSelector(".select2-results__option"));
+        List<WebElement> options = driver.findElements(By.cssSelector(".select2-results__option"));
         options.get(0).click();
         options.get(1).click();
         
         // Verify selections
-        List&lt;WebElement&gt; selectedItems = driver.findElements(By.cssSelector(".select2-selection__choice"));
+        List<WebElement> selectedItems = driver.findElements(By.cssSelector(".select2-selection__choice"));
         Assertions.assertTrue(selectedItems.size() >= 2);
     }
 
@@ -140,7 +140,7 @@ public class Select2Test {
         Assertions.assertTrue(driver.getTitle().contains("Documentation"));
         
         // Test all documentation links
-        List&lt;WebElement&gt; docLinks = driver.findElements(By.cssSelector(".documentation-links a"));
+        List<WebElement> docLinks = driver.findElements(By.cssSelector(".documentation-links a"));
         for (WebElement link : docLinks) {
             String href = link.getAttribute("href");
             if (href.startsWith("http")) {

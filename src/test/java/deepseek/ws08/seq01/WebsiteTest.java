@@ -1,4 +1,4 @@
-package deepseek.ws07.seq01;
+package deepseek.ws08.seq01;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
