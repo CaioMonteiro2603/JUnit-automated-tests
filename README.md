@@ -1,6 +1,8 @@
 ##  Nome das pastas
 
 ### As pastas com os nomes `ws01`, `ws02` etc foram seguidos de acordo com os nomes dos sites presentes em nossa documentação do overleaf. 
+
+### seq 01: Primeira sequência de geração de casos de teste. A expectativa é realizarmos 10 sequências por pasta para avaliarmos o padrão de código gerado pelo modelo deepseek/deepseek-chat-v3-0324:free
 ---
 ## 🤖 Como os testes foram gerados
 
