@@ -29,7 +29,7 @@ public class SelectorsHubTest {
     @AfterEach
     public void tearDown() {
         // Close all windows except main window
-        Set&lt;String&gt; windowHandles = driver.getWindowHandles();
+        Set<String> windowHandles = driver.getWindowHandles();
         for (String handle : windowHandles) {
             if (!handle.equals(mainWindowHandle)) {
                 driver.switchTo().window(handle).close();
@@ -131,7 +131,7 @@ public class SelectorsHubTest {
         Assertions.assertTrue(selectAll.isSelected());
         
         // Test individual checkboxes
-        List&lt;WebElement&gt; checkboxes = driver.findElements(By.xpath("//input[contains(@id,'ohrmList_chkSelectRecord_')]"));
+        List<WebElement> checkboxes = driver.findElements(By.xpath("//input[contains(@id,'ohrmList_chkSelectRecord_')]"));
         for (WebElement checkbox : checkboxes) {
             Assertions.assertTrue(checkbox.isSelected());
         }

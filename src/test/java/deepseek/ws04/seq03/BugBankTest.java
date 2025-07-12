@@ -134,7 +134,7 @@ public class BugBankTest {
         Assertions.assertTrue(driver.findElement(By.cssSelector(".account__number")).isDisplayed());
         
         // Verify menu buttons
-        List&lt;WebElement&gt; menuButtons = driver.findElements(By.cssSelector(".home__button"));
+        List<WebElement> menuButtons = driver.findElements(By.cssSelector(".home__button"));
         Assertions.assertEquals(3, menuButtons.size());
         
         // Verify each button is clickable
@@ -202,7 +202,7 @@ public class BugBankTest {
         driver.get("https://bugbank.netlify.app/");
         
         // Find all external links
-        List&lt;WebElement&gt; externalLinks = driver.findElements(By.cssSelector("a[href^='http']"));
+        List<WebElement> externalLinks = driver.findElements(By.cssSelector("a[href^='http']"));
         
         for (WebElement link : externalLinks) {
             String href = link.getAttribute("href");

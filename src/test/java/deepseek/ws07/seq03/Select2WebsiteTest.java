@@ -133,7 +133,7 @@ public class Select2WebsiteTest {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".select2-results li")));
         
         // Verify results
-        List&lt;WebElement&gt; results = driver.findElements(By.cssSelector(".select2-results li"));
+        List<WebElement> results = driver.findElements(By.cssSelector(".select2-results li"));
         Assertions.assertTrue(results.size() > 0);
     }
 
