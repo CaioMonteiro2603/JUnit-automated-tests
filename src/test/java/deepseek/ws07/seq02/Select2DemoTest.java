@@ -77,7 +77,7 @@ public class Select2DemoTest {
         option2.click();
         
         // Verify selections
-        List&lt;WebElement&gt; selectedValues = driver.findElements(By.cssSelector(".js-example-basic-multiple .select2-selection__choice"));
+        List<WebElement> selectedValues = driver.findElements(By.cssSelector(".js-example-basic-multiple .select2-selection__choice"));
         Assertions.assertEquals(2, selectedValues.size(), "Should have 2 selected options");
         Assertions.assertTrue(selectedValues.get(0).getText().contains("Alabama"), "First selection should be Alabama");
         Assertions.assertTrue(selectedValues.get(1).getText().contains("California"), "Second selection should be California");
@@ -128,7 +128,7 @@ public class Select2DemoTest {
         }
         
         // Verify results are displayed
-        List&lt;WebElement&gt; results = driver.findElements(By.cssSelector(".select2-results__option"));
+        List<WebElement> results = driver.findElements(By.cssSelector(".select2-results__option"));
         Assertions.assertTrue(results.size() > 0, "Should display search results");
     }
 
@@ -182,7 +182,7 @@ public class Select2DemoTest {
         option4.click();
         
         // Verify only 3 selections allowed
-        List&lt;WebElement&gt; selectedValues = driver.findElements(By.cssSelector(".js-example-basic-multiple-limit .select2-selection__choice"));
+        List<WebElement> selectedValues = driver.findElements(By.cssSelector(".js-example-basic-multiple-limit .select2-selection__choice"));
         Assertions.assertEquals(3, selectedValues.size(), "Should only allow 3 selections");
     }
 

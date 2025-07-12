@@ -158,11 +158,11 @@ public class FormPageTest {
     @Test
     public void testNavigationLinks() {
         // Test all navigation links on the page
-        List&lt;WebElement&gt; links = driver.findElements(By.tagName("a"));
+        List<WebElement> links = driver.findElements(By.tagName("a"));
         
         for (WebElement link : links) {
             String href = link.getAttribute("href");
-            if (href != null &amp;&amp; !href.isEmpty()) {
+            if (href != null && !href.isEmpty()) {
                 String originalWindow = driver.getWindowHandle();
                 
                 // Open link in new tab
@@ -240,7 +240,7 @@ public class FormPageTest {
     public void testRoleDropdownOptions() {
         // Test role dropdown options
         WebElement roleDropdown = driver.findElement(By.id("role"));
-        List&lt;WebElement&gt; options = roleDropdown.findElements(By.tagName("option"));
+        List<WebElement> options = roleDropdown.findElements(By.tagName("option"));
         
         // Verify all expected options are present
         String[] expectedOptions = {
@@ -255,7 +255,7 @@ public class FormPageTest {
         
         Assertions.assertEquals(expectedOptions.length, options.size(), "Number of role options doesn't match");
         
-        for (int i = 0; i &lt; expectedOptions.length; i++) {
+        for (int i = 0; i < expectedOptions.length; i++) {
             Assertions.assertEquals(expectedOptions[i], options.get(i).getText(), 
                 "Role option text doesn't match at index " + i);
         }

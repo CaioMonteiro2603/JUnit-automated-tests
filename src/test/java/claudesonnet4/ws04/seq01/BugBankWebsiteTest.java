@@ -1,4 +1,4 @@
-package cluadesonnet4.ws04.seq01;
+package claudesonnet4.ws04.seq01;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;

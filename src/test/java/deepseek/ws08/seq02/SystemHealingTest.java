@@ -125,7 +125,7 @@ public class SystemHealingTest {
         String mainWindow = driver.getWindowHandle();
         
         // Get all links on the page
-        List&lt;WebElement&gt; links = driver.findElements(By.tagName("a"));
+        List<WebElement> links = driver.findElements(By.tagName("a"));
         
         for (WebElement link : links) {
             String href = link.getAttribute("href");
@@ -134,7 +134,7 @@ public class SystemHealingTest {
                 link.click();
                 
                 // Switch to new tab
-                Set&lt;String&gt; windows = driver.getWindowHandles();
+                Set<String> windows = driver.getWindowHandles();
                 windows.remove(mainWindow);
                 String newWindow = windows.iterator().next();
                 driver.switchTo().window(newWindow);
