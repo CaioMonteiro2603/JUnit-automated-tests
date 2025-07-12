@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.List;
+
 public class CheckoutCompletePageTest extends BaseTest {
 
     @BeforeEach
