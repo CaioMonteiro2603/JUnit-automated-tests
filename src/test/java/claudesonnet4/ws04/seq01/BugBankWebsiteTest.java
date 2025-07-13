@@ -405,7 +405,7 @@ public class BugBankWebsiteTest {
     @Test
     @Order(16)
     @DisplayName("Test external GitHub repository link")
-    void testExternalGitHubRepositoryLink() {
+    void testExternalGitHubRepositoryLink() throws InterruptedException{
         driver.get(REQUIREMENTS_URL);
         
         // Find the GitHub repository link

@@ -567,7 +567,7 @@ public class KatalonTestSuite {
     @Test
     @Order(14)
     @DisplayName("Test Page Responsiveness and Element Visibility")
-    void testPageResponsiveness() {
+    void testPageResponsiveness() throws InterruptedException {
         String[] testUrls = {MAIN_FORM_URL, DEMO_FORM_URL, INDEX_URL};
         
         for (String url : testUrls) {

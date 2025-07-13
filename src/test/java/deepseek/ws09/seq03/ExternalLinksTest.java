@@ -1,5 +1,6 @@
 package deepseek.ws09.seq03;
 
+import org.openqa.selenium.WebElement;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import static org.junit.jupiter.api.Assertions.*;
